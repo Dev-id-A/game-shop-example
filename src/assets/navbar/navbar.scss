@@ -1,0 +1,9 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+
+#navbar{
+    background-color: $navbar-color;
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
