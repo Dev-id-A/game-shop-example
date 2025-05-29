@@ -1,6 +1,29 @@
 #navbar {
   background-color: black;
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   position: sticky;
+  margin: 0;
+}
+#navbar #nav-home, #navbar #nav-videogames, #navbar #nav-accesories {
+  padding-top: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+  height: 100%;
+  margin: 0;
+}
+#navbar #nav-home:hover, #navbar #nav-videogames:hover, #navbar #nav-accesories:hover {
+  background-color: white;
+  color: black;
+}
+#navbar #nav-profile {
+  padding: 0.3em 1em 0.3em 0;
+  font-size: 2.5em;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#navbar #nav-profile:hover {
+  color: white;
 }/*# sourceMappingURL=navbar.css.map */
