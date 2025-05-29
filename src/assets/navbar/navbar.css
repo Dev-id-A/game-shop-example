@@ -4,6 +4,8 @@
   height: 8vh;
   position: sticky;
   margin: 0;
+  padding: 0 5% 0 9%;
+  gap: -1em;
 }
 #navbar #nav-home, #navbar #nav-videogames, #navbar #nav-accesories {
   padding-top: 0.5em;
@@ -18,12 +20,15 @@
   background-color: white;
   color: black;
 }
-#navbar #nav-profile {
-  padding: 0.3em 1em 0.3em 0;
+#navbar #nav-menu, #navbar #nav-profile, #navbar #nav-cart {
+  padding: 0.3em 0 0.3em 0;
   font-size: 2.5em;
   width: -moz-fit-content;
   width: fit-content;
 }
-#navbar #nav-profile:hover {
+#navbar #nav-menu:hover, #navbar #nav-profile:hover, #navbar #nav-cart:hover {
   color: white;
+}
+#navbar #nav-profile #nav-cart {
+  margin-right: -4%;
 }/*# sourceMappingURL=navbar.css.map */
