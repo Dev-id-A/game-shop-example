@@ -2,10 +2,11 @@
   background-color: black;
   width: 100%;
   height: 8vh;
-  position: sticky;
+  position: fixed;
   margin: 0;
   padding: 0 5% 0 9%;
   gap: -1em;
+  z-index: 101;
 }
 #navbar #nav-home, #navbar #nav-videogames, #navbar #nav-accesories {
   padding-top: 0.5em;

@@ -1,0 +1,8 @@
+#menu-div {
+  height: 100%;
+  width: 25vw;
+  background-color: rgb(46, 46, 46);
+  position: fixed;
+  left: -25vw;
+  z-index: 100;
+}/*# sourceMappingURL=menu.css.map */
