@@ -1,21 +1,12 @@
 import React from 'react';
 import "./navbar.css";
-import {showMenu, hideMenu} from "../menu/Menu";
-import $ from "jquery";
-import { useState } from 'react';
+import {showMenu} from "../menu/Menu";
 
 function navbar() {
-  const [toggleMenu, setToggleMenu] = useState(false)
   const openSlide = e => {
-    e.preventDefault();
-    if(!toggleMenu){
+      e.preventDefault();
       showMenu();
       setToggleMenu(true);
-    }
-    else{
-      hideMenu();
-      setToggleMenu(false);
-    }
   };
   return (
     <div id="navbar" className="d-flex justify-content-between">

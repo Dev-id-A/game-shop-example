@@ -4,6 +4,7 @@ import Navbar from './assets/navbar/Navbar.jsx'
 import Menu from './assets/menu/Menu.jsx'
 
 function App() {
+  const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <main id="main">
       <Navbar/>

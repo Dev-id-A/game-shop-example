@@ -4,8 +4,46 @@
 #menu-div{
     height: 100%;
     width: 25vw;
-    background-color: rgb(46, 46, 46);
+    background-color: $principal-color;
     position: fixed;
     left: -25vw;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+
+    #x-btn{
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        color: $icons-color;
+        font-size: xx-large;
+
+        &:hover{
+            cursor: pointer;
+            color: white;
+        }
+    }
+
+    #input-menu{
+        margin-top: 35%;
+        height: 5%;
+        width: 50%;
+        border-radius: 15px 0 0 15px;
+        font-size: large;
+    }
+
+    #search-btn{
+        margin-top: 35%;
+        height: 5%;
+        width: 10%;
+        border-radius: 0 15px 15px 0;
+        background-color: black;
+        font-size: x-large;
+        color: $icons-color;
+
+        &:hover{
+            color: white;
+        }
+        
+    }
 }

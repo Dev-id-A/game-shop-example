@@ -17,7 +17,11 @@ export const hideMenu = () => {
 function Menu() {
 
   return (
-    <div id='menu-div'></div>
+    <div id='menu-div'>
+      <a id="x-btn" onClick={hideMenu}><i className="bi bi-x-lg"></i></a>
+      <input type="text" id="input-menu" placeholder="Pokémon, Gaming chair..."/>
+      <button id="search-btn"><i className="bi bi-search"></i></button>
+    </div>
   )
 }
 
