@@ -1,0 +1,28 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+
+#scroll-div{
+    @include basic-border();
+    @include center-page();
+    height: 60%;
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 50px;
+    background-color: black;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+
+    #scroll-img{
+        background-color: white;
+        height: 100%;
+    }
+
+    .col-1{
+        height: 15%;
+        width: 5%;
+        border-radius: 100px;
+        font-size: xx-large;
+        color: black;
+    }
+}
