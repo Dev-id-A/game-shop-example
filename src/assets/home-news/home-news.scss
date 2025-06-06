@@ -1,0 +1,28 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+
+#news-section{
+    margin-top: 5%;
+    padding: 1% 5%;
+
+    #section-title{
+        text-decoration: underline;
+    }
+
+    #news-div{
+        border: 10px solid black;
+        border-radius: 10px;
+        padding: 1% 2%;
+
+        #news-title{
+            font-style: italic;
+            text-align: center;
+        }
+
+        #news-portal{
+            font-style: oblique;
+            margin-top: 2%;
+            text-align: end;
+        }
+    }
+}

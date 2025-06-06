@@ -1,0 +1,21 @@
+#news-section {
+  margin-top: 5%;
+  padding: 1% 5%;
+}
+#news-section #section-title {
+  text-decoration: underline;
+}
+#news-section #news-div {
+  border: 10px solid black;
+  border-radius: 10px;
+  padding: 1% 2%;
+}
+#news-section #news-div #news-title {
+  font-style: italic;
+  text-align: center;
+}
+#news-section #news-div #news-portal {
+  font-style: oblique;
+  margin-top: 2%;
+  text-align: end;
+}/*# sourceMappingURL=home-news.css.map */
