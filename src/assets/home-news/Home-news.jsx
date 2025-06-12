@@ -1,9 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import "./home-news.css";
 import { data } from 'jquery';
 
 const HomeNews = () => {
   const [data, setData] = useState("null");
+  const randomNews = useMemo(() =>{
+    if(data.length === 0){
+      return null;
+    }
+      return Math.floor(Math.random() * data.length);
+  },[data]);
+  console.log(randomNews);
 
 useEffect(()=>{
    const fetchData = async () => {
@@ -23,9 +30,9 @@ fetchData()
     <section id="news-section">
         <h2 id="section-title">What's News</h2>
         <div id="news-div" className="container">
-            <h4 id="news-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deleniti animi voluptatibus amet aliquam illum corrupti quisquam. Laudantium consequatur neque, perferendis ipsa, dolore nobis magnam iste cumque nesciunt quod unde.</h4>
-            <h5 id="news-portal">-Lorem</h5>
-            <a id="news-site">Lorem ipsum</a>
+            <h4 id="news-title">{data[randomNews].news}</h4>
+            <h5 id="news-portal">-{data[randomNews].portal}</h5>
+            <a id="news-site" href={data[randomNews].link} target="_blank">{data[randomNews].link}</a>
         </div>
     </section>
   )
