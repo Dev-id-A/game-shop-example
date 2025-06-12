@@ -1,16 +1,31 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import "./home-news.css";
-import { data } from 'jquery';
+import $ from 'jquery';
 
 const HomeNews = () => {
   const [data, setData] = useState("null");
-  const randomNews = useMemo(() =>{
+  const [randomNumber, setRandomNumber] = useState(0);
+
+useEffect(()=>{
     if(data.length === 0){
       return null;
     }
-      return Math.floor(Math.random() * data.length);
+
+    const fadeNews = setInterval(()=>{
+      $("#news-title").fadeOut(1000);
+      $("#news-portal").fadeOut(1000);
+      $("#news-site").fadeOut(1000, () =>{
+
+      setRandomNumber(Math.floor(Math.random() * data.length));
+
+      $("#news-title").fadeIn(1000);
+      $("#news-portal").fadeIn(1000);
+      $("#news-site").fadeIn(1000);
+      });
+    },7000)
+      
+    return() => clearInterval(fadeNews); 
   },[data]);
-  console.log(randomNews);
 
 useEffect(()=>{
    const fetchData = async () => {
@@ -30,9 +45,9 @@ fetchData()
     <section id="news-section">
         <h2 id="section-title">What's News</h2>
         <div id="news-div" className="container">
-            <h4 id="news-title">{data[randomNews].news}</h4>
-            <h5 id="news-portal">-{data[randomNews].portal}</h5>
-            <a id="news-site" href={data[randomNews].link} target="_blank">{data[randomNews].link}</a>
+            <h4 id="news-title">{data[randomNumber].news}</h4>
+            <h5 id="news-portal">-{data[randomNumber].portal}</h5>
+            <a id="news-site" href={data[randomNumber].link} target="_blank">More about the new's here <i className="bi bi-link-45deg"></i></a>
         </div>
     </section>
   )
