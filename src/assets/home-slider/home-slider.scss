@@ -1,0 +1,16 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+
+#swiper-container{
+    margin-top: 4%;
+    border: 5px solid black;
+    border-radius: 50px;
+    width: 75%;
+    height: 70%;
+    box-sizing: border-box;
+
+    h1{
+        text-align: center;
+        margin-top: 20%;
+    }
+}

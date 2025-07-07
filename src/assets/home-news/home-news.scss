@@ -10,10 +10,13 @@
     }
 
     #news-div{
+        position: relative;
         border: 10px solid black;
         border-radius: 10px;
         padding: 1% 2%;
         margin-top: 3%;
+        height: 20vh;
+
 
 
         #news-title{
@@ -26,6 +29,12 @@
             font-style: oblique;
             margin-top: 2%;
             text-align: end;
+        }
+
+        #news-site{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
         }
     }
 }
